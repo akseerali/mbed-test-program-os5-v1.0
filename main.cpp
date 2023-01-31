@@ -190,9 +190,12 @@ void sound()
     {
         Buzzer.period(1.0/700.0);
         Buzzer = 0.5;
+        
+        pc.printf("Joystick = {(up,%d), (down,%d), (left,%d), (right,%d), (center,%d)} \n\n", j_up, j_down, j_left, j_right, j_center);
     }
     else 
     {
         Buzzer=0;  
+        pc.printf("Joystick = {(up,%d), (down,%d), (left,%d), (right,%d), (center,%d)} \n\n", j_up, j_down, j_left, j_right, j_center);
     }
 }
